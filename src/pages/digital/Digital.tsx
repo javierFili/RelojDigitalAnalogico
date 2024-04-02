@@ -58,7 +58,7 @@ function ComponenteDigital() {
         <p className="titulohora">Reloj online</p>
         <p className="fechaActual">{fecha}</p>
         <p className="horaActualizada">{hora}</p>
-        <a href="/">inicio</a>
+        <a href="/RelojDigitalAnalogico">inicio</a>
       </section>
     </div>
   );

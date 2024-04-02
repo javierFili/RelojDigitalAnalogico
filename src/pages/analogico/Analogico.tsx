@@ -28,7 +28,7 @@ function ComponenteAnalogico() {
   }, []);
   let puntosHoras = dividirCircunferencia(5, centro.x, centro.y);
   let puntosMim = dividirEnSesenta(5, centro.x, centro.y);
-  console.log(minuto, " ", segundo);
+  console.log(minuto);
   return (
     <div className="">
       <section className="">
@@ -91,7 +91,7 @@ function ComponenteAnalogico() {
           })} */}
         </svg>
         {minuto + "/" + segundo}
-        <a href="/">inicio</a>
+        <a href="/RelojDigitalAnalogico">inicio</a>
       </section>
     </div>
   );
