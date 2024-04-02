@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RelojDigitalAnalogico/static/css/main.8b479f09.css",
+    "main.js": "/RelojDigitalAnalogico/static/js/main.d8b3ca59.js",
+    "index.html": "/RelojDigitalAnalogico/index.html",
+    "main.8b479f09.css.map": "/RelojDigitalAnalogico/static/css/main.8b479f09.css.map",
+    "main.d8b3ca59.js.map": "/RelojDigitalAnalogico/static/js/main.d8b3ca59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b479f09.css",
+    "static/js/main.d8b3ca59.js"
+  ]
+}
