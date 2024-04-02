@@ -1,0 +1,24 @@
+.elementoPrincipal {
+  background-color: rgb(3, 2, 3);
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.horaActual {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: 1fr;
+}
+.titulohora {
+  font-size: 4em;
+}
+
+.fechaActual {
+  font-size: 4em;
+}
+
+.horaActualizada {
+  font-size: 4em;
+}
