@@ -44,3 +44,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+## RELOJ ANALOGICO
+![image](https://github.com/javierFili/RelojDigitalAnalogico/assets/75696158/1dc9af27-2cc4-4513-b699-22b8d8ead29d)
+## RELOJ DIGITAL
+![image](https://github.com/javierFili/RelojDigitalAnalogico/assets/75696158/7caa42f9-f807-429b-b791-058be0c66029)
