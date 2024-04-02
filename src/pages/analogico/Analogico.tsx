@@ -28,7 +28,7 @@ function ComponenteAnalogico() {
   }, []);
   let puntosHoras = dividirCircunferencia(5, centro.x, centro.y);
   let puntosMim = dividirEnSesenta(5, centro.x, centro.y);
-  console.log(puntosMim);
+  console.log(minuto, " ", segundo);
   return (
     <div className="">
       <section className="">
@@ -59,13 +59,23 @@ function ComponenteAnalogico() {
             y2={puntosHoras[hora].y + 1}
             style={{ color: "red", strokeWidth: "0.4" }}
           />
-          <line
-            x1={centro.x + 0.5}
-            y1={centro.y - 0.5}
-            x2={puntosMim[minuto - 1].x}
-            y2={puntosMim[minuto - 1].y}
-            style={{ color: "blue", strokeWidth: "0.2" }}
-          />
+          {minuto > 0 ? (
+            <line
+              x1={centro.x + 0.5}
+              y1={centro.y - 0.5}
+              x2={puntosMim[minuto - 1].x}
+              y2={puntosMim[minuto - 1].y}
+              style={{ color: "blue", strokeWidth: "0.2" }}
+            />
+          ) : (
+            <line
+              x1={centro.x + 0.5}
+              y1={centro.y - 0.5}
+              x2={puntosMim[minuto].x}
+              y2={puntosMim[minuto].y}
+              style={{ color: "blue", strokeWidth: "0.2" }}
+            />
+          )}
           <line
             x1={centro.x + 0.5}
             y1={centro.y - 0.5}
