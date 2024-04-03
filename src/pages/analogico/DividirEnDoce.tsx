@@ -23,17 +23,18 @@ const dividirCircunferencia = (r: number, x: number, y: number): Punto[] => {
 function rotarPuntos(puntos: Punto[]) {
   let puntosNuevo: Punto[] = [];
   puntosNuevo[0] = puntos[10];
-  puntosNuevo[1] = puntos[11];
-  puntosNuevo[2] = puntos[0];
-  puntosNuevo[3] = puntos[1];
-  puntosNuevo[4] = puntos[2];
-  puntosNuevo[5] = puntos[3];
-  puntosNuevo[6] = puntos[4];
-  puntosNuevo[7] = puntos[5];
-  puntosNuevo[8] = puntos[6];
-  puntosNuevo[9] = puntos[7];
-  puntosNuevo[10] = puntos[8];
-  puntosNuevo[11] = puntos[9];
+  puntosNuevo[1] = puntos[10];
+  puntosNuevo[2] = puntos[11];
+  puntosNuevo[3] = puntos[0];
+  puntosNuevo[4] = puntos[1];
+  puntosNuevo[5] = puntos[2];
+  puntosNuevo[6] = puntos[3];
+  puntosNuevo[7] = puntos[4];
+  puntosNuevo[8] = puntos[5];
+  puntosNuevo[9] = puntos[6];
+  puntosNuevo[10] = puntos[7];
+  puntosNuevo[11] = puntos[8];
+  puntosNuevo[12] = puntos[9];
   return puntosNuevo;
 }
 

@@ -26,8 +26,9 @@ function ComponenteAnalogico() {
 
     return () => clearInterval(intervalo);
   }, []);
-  let puntosHoras = dividirCircunferencia(5, centro.x, centro.y);
+  let puntosHoras = dividirCircunferencia(3, centro.x, centro.y);
   let puntosMim = dividirEnSesenta(5, centro.x, centro.y);
+  let puntosNumHoras = dividirCircunferencia(5, centro.x, centro.y);
   console.log(minuto);
   return (
     <div className="">
@@ -42,12 +43,14 @@ function ComponenteAnalogico() {
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          {puntosHoras.map((obj, index: number) => {
-            return (
-              <text x={obj.x} y={obj.y} fontSize="1px">
-                {index + 1}
-              </text>
-            );
+          {puntosNumHoras.map((obj, index: number) => {
+            if (index != 0) {
+              return (
+                <text x={obj.x} y={obj.y} fontSize="1px">
+                  {index}
+                </text>
+              );
+            }
           })}
           ;
           <circle cx={centro.x + 0.3} cy={centro.y - 0.3} r="5.8" />
@@ -55,9 +58,9 @@ function ComponenteAnalogico() {
           <line
             x1={centro.x + 0.5}
             y1={centro.y - 0.5}
-            x2={puntosHoras[hora].x + 1}
-            y2={puntosHoras[hora].y + 1}
-            style={{ color: "red", strokeWidth: "0.4" }}
+            x2={puntosHoras[hora].x}
+            y2={puntosHoras[hora].y}
+            style={{ strokeWidth: "0.4" }}
           />
           {minuto > 0 ? (
             <line
@@ -65,7 +68,7 @@ function ComponenteAnalogico() {
               y1={centro.y - 0.5}
               x2={puntosMim[minuto - 1].x}
               y2={puntosMim[minuto - 1].y}
-              style={{ color: "blue", strokeWidth: "0.2" }}
+              style={{ strokeWidth: "0.2" }}
             />
           ) : (
             <line
@@ -73,7 +76,7 @@ function ComponenteAnalogico() {
               y1={centro.y - 0.5}
               x2={puntosMim[minuto].x}
               y2={puntosMim[minuto].y}
-              style={{ color: "blue", strokeWidth: "0.2" }}
+              style={{ strokeWidth: "0.2" }}
             />
           )}
           <line
@@ -81,6 +84,7 @@ function ComponenteAnalogico() {
             y1={centro.y - 0.5}
             x2={puntosMim[segundo].x}
             y2={puntosMim[segundo].y}
+            style={{ color: "red" }}
           />
           {/*  {puntosMim.map((obj, index: number) => {
             return (
