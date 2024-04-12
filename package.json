@@ -1,10 +1,10 @@
 {
-  "homepage": "https://javierFili.github.io/RelojDigitalAnalogico",
+  "homepage": "https://javierFili.github.i/RelojDigitalAnalogico",
   "scripts": {
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
-  "name": "relojdigital",
+  "name": "RelojDigitalAnalogico",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
