@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/relojdigital/build/static/css/main.8b479f09.css",
+    "main.js": "/relojdigital/build/static/js/main.f8b0f68f.js",
+    "index.html": "/relojdigital/build/index.html",
+    "main.8b479f09.css.map": "/relojdigital/build/static/css/main.8b479f09.css.map",
+    "main.f8b0f68f.js.map": "/relojdigital/build/static/js/main.f8b0f68f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b479f09.css",
+    "static/js/main.f8b0f68f.js"
+  ]
+}
