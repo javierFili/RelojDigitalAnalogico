@@ -4,6 +4,11 @@ import { useState, useEffect } from "react";
 import dividirCircunferencia from "./DividirEnDoce";
 import dividirEnSesenta from "./DividirEnSesenta";
 
+interface Punto {
+  x: number;
+  y: number;
+}
+
 function ComponenteAnalogico() {
   const [hora, setHora] = useState<number>(0);
   const [minuto, setMinuto] = useState<number>(0);
@@ -19,14 +24,22 @@ function ComponenteAnalogico() {
       const fechaActual = new Date();
       setSegundo(fechaActual.getSeconds());
       setMinuto(fechaActual.getMinutes());
-      setHora(fechaActual.getHours());
+      let horas12 = fechaActual.getHours();
+      if (horas12 > 12) {
+        horas12 -= 12;
+      }
+      if (horas12 === 0) {
+        horas12 = 12;
+      }
+      setHora(horas12);
     };
     // para el segundero
     const intervalo = setInterval(actualizarHora, 1000);
 
     return () => clearInterval(intervalo);
   }, []);
-  let puntosHoras = dividirCircunferencia(3, centro.x, centro.y);
+  let puntosHoras: Punto[] = dividirCircunferencia(3, centro.x, centro.y);
+  console.log(puntosHoras);
   let puntosMim = dividirEnSesenta(5, centro.x, centro.y);
   let puntosNumHoras = dividirCircunferencia(5, centro.x, centro.y);
   console.log(minuto);
@@ -86,13 +99,6 @@ function ComponenteAnalogico() {
             y2={puntosMim[segundo].y}
             style={{ color: "red" }}
           />
-          {/*  {puntosMim.map((obj, index: number) => {
-            return (
-              <text x={obj.x} y={obj.y} fontSize="0.3px">
-                {index + 1}
-              </text>
-            );
-          })} */}
         </svg>
         {minuto + "/" + segundo}
         <a href="/RelojDigitalAnalogico">inicio</a>
