@@ -1,5 +1,5 @@
 {
-  "homepage": "https://javierFili.github.io/",
+  "homepage": "https://javierFili.github.io/RelojDigitalAnalogico/build",
   "scripts": {
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
