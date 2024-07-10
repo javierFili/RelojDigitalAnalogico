@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/RelojDigitalAnalogico/static/css/main.8b479f09.css",
-    "main.js": "/RelojDigitalAnalogico/static/js/main.a56b744a.js",
+    "main.js": "/RelojDigitalAnalogico/static/js/main.e3586640.js",
     "index.html": "/RelojDigitalAnalogico/index.html",
     "main.8b479f09.css.map": "/RelojDigitalAnalogico/static/css/main.8b479f09.css.map",
-    "main.a56b744a.js.map": "/RelojDigitalAnalogico/static/js/main.a56b744a.js.map"
+    "main.e3586640.js.map": "/RelojDigitalAnalogico/static/js/main.e3586640.js.map"
   },
   "entrypoints": [
     "static/css/main.8b479f09.css",
-    "static/js/main.a56b744a.js"
+    "static/js/main.e3586640.js"
   ]
 }
